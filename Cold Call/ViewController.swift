@@ -10,26 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
-    let names = [ "Annie", "Pat", "Kostya"]
-    var currentName = 0
+    let names = [ "Annie", "Pat", "Kostya", "John", "JP"]
+    
+
     @IBAction func coldcallButton(_ sender: UIButton) {
-        updateUI()
-        if (currentName < names.count - 1) {
-            currentName += 1
-        }
-        else {
-            currentName = 0
-        }
+        nameLabel.text = names[Int(arc4random_uniform(UInt32(names.count)))]
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = "Ready?"
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    func updateUI() {
-        nameLabel.text = names[currentName]
     }
 
     override func didReceiveMemoryWarning() {
