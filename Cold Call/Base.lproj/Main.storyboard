@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bV-fL-7Ja">
-                                <rect key="frame" x="106" y="28" width="110" height="56.5"/>
+                                <rect key="frame" x="105" y="28" width="110" height="56.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="47"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,10 +36,18 @@
                                     <action selector="coldcallButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tCg-Jw-7VQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-Kr-xvJ">
+                                <rect key="frame" x="121.5" y="179" width="78" height="211.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="177"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Lld-Kr-xvJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P6n-fY-aGT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eev-jL-GbV" secondAttribute="bottom" constant="8" id="U9X-2Q-rnR"/>
+                            <constraint firstItem="Lld-Kr-xvJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWk-0h-eO0"/>
                             <constraint firstItem="5bV-fL-7Ja" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="abH-nX-qwA"/>
                             <constraint firstItem="eev-jL-GbV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mbF-Vq-YIk"/>
                             <constraint firstItem="5bV-fL-7Ja" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mg9-w3-asE"/>
@@ -48,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="5bV-fL-7Ja" id="6L7-Fy-j6l"/>
+                        <outlet property="numberLabel" destination="Lld-Kr-xvJ" id="bpz-ci-HjU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
